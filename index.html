@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Apps Script</title>
+    <style>
+        /* Remove margens padrão e garante que o corpo ocupe 100% da tela */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container do iframe */
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Estilização do Iframe */
+        iframe {
+            flex-grow: 1;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <iframe 
+            src="https://script.google.com/macros/s/AKfycbzVQLln0rxMNRlma7EBxcisE9aO8G-pg6Yv0P9ioYSKpgx4WIz2he0DJFOfDNAiTT9O/exec" 
+            allow="geolocation; microphone; camera; midi; encrypted-media;"
+            title="Google Apps Script App">
+        </iframe>
+    </div>
+
+</body>
+</html>
